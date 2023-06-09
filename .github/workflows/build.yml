@@ -26,7 +26,7 @@ jobs:
                   pip install pyinstaller
 
             - name: Build
-              run: pyinstaller --onefile --distpath=./ endless_explorer.py
+              run: pyinstaller --onefile --windowed --distpath=./ endless_explorer.py
 
             - name: Commit
               run: |
