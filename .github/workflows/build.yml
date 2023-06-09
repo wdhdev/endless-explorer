@@ -25,10 +25,8 @@ jobs:
                   python -m pip install --upgrade pip
                   pip install pyinstaller
 
-            - name: Build cmd.exe
-              run: |
-                  cd cmd
-                  pyinstaller --onefile --distpath=./ endless_explorer.py
+            - name: Build
+              run: pyinstaller --onefile --distpath=./ endless_explorer.py
 
             - name: Commit
               run: |
